@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // ✅ Rest Assured
+    testImplementation 'io.rest-assured:rest-assured:5.4.0'
+
+    testImplementation("org.testng:testng:7.11.0")
+
+    // 🔹 Lombok for main
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.32'
+
+    // 🔹 Lombok for tests (optional but recommended)
+    testCompileOnly 'org.projectlombok:lombok:1.18.32'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.32'
+
+
+
+//    testCompileOnly 'org.projectlombok:lombok:1.18.32'
+////    implementation("org.projectlombok:lombok:1.18.30")
+//    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.20.1")
+    testImplementation("org.hamcrest:hamcrest:3.0")
+}
+
+test {
+    useTestNG(){
+        testLogging {}
+    }
+}
