@@ -9,4 +9,5 @@ import lombok.Data;
 public class CustomerRequest {
     private String name;
     private String email;
+    private String phone;
 }

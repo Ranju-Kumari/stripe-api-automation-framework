@@ -1,4 +1,4 @@
-package com.stripe.api.tests.customers;
+package com.stripe.api.tests.customers.happyPathTests;
 
 
 import com.stripe.api.models.requests.customers.CustomerRequest;
@@ -8,8 +8,9 @@ import com.stripe.api.service.customers.CustomerService;
 import com.stripe.api.tests.base.BaseTest;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
+
 import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.startsWith;
+import static org.hamcrest.Matchers.*;
 import static org.testng.Assert.*;
 
 public class CustomerCreationTest extends BaseTest {
@@ -19,7 +20,7 @@ public class CustomerCreationTest extends BaseTest {
     @Test(testName = "Able to create a customer successfully")
     public void createCustomer() {
 
-        //Serialization
+        //Serialization (Request Serialization)
         CustomerRequest request = CustomerRequest.builder()
                         .name("Jenny Rosen")
                         .email("jennyrosen@example.com")
@@ -27,7 +28,7 @@ public class CustomerCreationTest extends BaseTest {
 
         Response customer = customerService.createCustomer(request);
 
-        //Response validations
+        //Response verification
         customer.then()
                 .statusCode(200)
                 .body("id", startsWith("cus_"))
@@ -36,10 +37,10 @@ public class CustomerCreationTest extends BaseTest {
                 .body("object", equalTo("customer"));
 
 
-        //Deserialization
+        //Deserialization  (Response Deserialization)
         CustomerResponse customerResponse  = customer.as(CustomerResponse.class);
 
-        // Final assertions
+        // Final assertions (Validation )
         assertNotNull(customerResponse.getId());
         assertEquals(customerResponse.getName(), "Jenny Rosen");
         assertEquals(customerResponse.getEmail(), "jennyrosen@example.com");
@@ -101,4 +102,38 @@ public class CustomerCreationTest extends BaseTest {
          */
 
     }
+
+    // Business logic validation
+    @Test(testName = "Cannot create duplicate customer with same email")
+    public void createDuplicateCustomer() {
+
+        // Create first customer
+        CustomerRequest firstRequest = CustomerRequest.builder()
+                .name("Jenny Rosen")
+                .email("jennyrosen@example.com")
+                .build();
+
+        Response firstCustomer = customerService.createCustomer(firstRequest);
+        firstCustomer.then()
+                .statusCode(200);
+
+        CustomerResponse firstResponse = firstCustomer.as(CustomerResponse.class);
+        assertNotNull(firstResponse.getId());
+
+        // Attempt to create duplicate customer with same email
+        CustomerRequest duplicateRequest = CustomerRequest.builder()
+                .name("Jenny Rosen Duplicate")
+                .email("jennyrosen@example.com")
+                .build();
+
+        Response duplicateCustomer = customerService.createCustomer(duplicateRequest);
+
+        // Verify conflict response
+        duplicateCustomer.then()
+                .statusCode(409)
+                .body("error.type", equalTo("invalid_request_error"))
+                .body("error.code", equalTo("resource_already_exists"))
+                .body("error.message", containsString("email"));
+    }
+
 }
