@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.stripe'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // ✅ Rest Assured
+    testImplementation 'io.rest-assured:rest-assured:5.4.0'
+
+    testImplementation 'org.testng:testng:7.11.0'
+
+    // 🔹 Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.32'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.32'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.32'
+
+    // Jackson for JSON handling
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.20.1'
+
+    // Assertions
+    testImplementation 'org.hamcrest:hamcrest:3.0'
+    testImplementation 'org.assertj:assertj-core:3.24.1'
+}
+
+tasks.named('test') {
+    useTestNG {
+        testLogging {
+            events "passed", "skipped", "failed"
+            exceptionFormat "full"
+        }
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+

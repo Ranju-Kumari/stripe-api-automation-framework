@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.stripe'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // ✅ Selenium WebDriver (implementation, not testImplementation, because it's used in main code)
+    implementation 'org.seleniumhq.selenium:selenium-java:4.41.0'
+
+    // ✅ WebDriverManager (auto-manages browser drivers)
+    implementation 'io.github.bonigarcia:webdrivermanager:6.3.3'
+
+    // ✅ Rest Assured (for cross-testing if needed)
+    testImplementation 'io.rest-assured:rest-assured:5.4.0'
+
+    testImplementation 'org.testng:testng:7.11.0'
+
+    // 🔹 Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.32'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.32'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.32'
+
+    // Jackson for JSON handling
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.20.1'
+
+    // Assertions
+    testImplementation 'org.hamcrest:hamcrest:3.0'
+    testImplementation 'org.assertj:assertj-core:3.24.1'
+
+    // Screenshot/Reporting
+    implementation 'commons-io:commons-io:2.11.0'
+}
+
+tasks.named('test') {
+    useTestNG {
+        testLogging {
+            events "passed", "skipped", "failed"
+            exceptionFormat "full"
+        }
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+

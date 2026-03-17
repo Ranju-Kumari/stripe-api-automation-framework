@@ -1,2 +1,7 @@
-rootProject.name = 'API_10thDec25'
+rootProject.name = 'stripe-api-automation-framework'
+
+// Include sub-modules for multi-module Gradle project
+include 'api-automation'
+include 'ui-automation'
+
 

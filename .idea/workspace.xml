@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4cbfa63c-3901-43ac-a191-556d97e59b91" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;src/test/java/com/stripe/api/service/customers/CustomerService.java&#10;#&#9;src/test/java/com/stripe/api/service/payments/InvoiceService.java&#10;#&#9;src/test/resources/config.properties">
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stripe/utilities/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/src/main/java/com/stripe/utilities/ConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stripe/api/models/requests/customers/CustomerRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stripe/api/models/requests/customers/UpdateCustomerRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stripe/api/models/requests/payments/CreateInvoiceRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stripe/api/models/responses/customers/CustomerResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stripe/api/models/responses/payments/CreateInvoiceResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stripe/api/service/customers/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stripe/api/service/payments/InvoiceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stripe/api/service/payments/PaymentIntentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stripe/api/tests/base/BaseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stripe/api/tests/customers/errorHandlingTests/unauthorized/CreateCustomerNegativeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stripe/api/tests/customers/happyPathTests/CustomerCreationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stripe/api/tests/payments/InnvoiceCreationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stripe/api/tests/payments/InvoiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stripe/api/tests/payments/PaymentIntentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/src/test/resources/config.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/ranju/IdeaProjects/Automation/stripe-api-automation-framework" value="36dfKZUVxUEekNoQoP0TSWAWOam" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedModel">
+    <selectedModels>
+      <entry key="chat-panel" value="Claude Opus 4.6" />
+      <entry key="agent-panel" value="Claude Opus 4.6" />
+    </selectedModels>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="stripe-api-automation-framework" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ranju-Kumari&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ranju-Kumari/stripe-api-automation-framework.git&quot;,
+    &quot;accountId&quot;: &quot;ccdf9b1a-16f7-42a0-94ee-69e71668a6df&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="36dfKZUVxUEekNoQoP0TSWAWOam" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Build API_10thDec25.executor": "Run",
+    "Gradle.CreateCustomerNegativeTest.createCustomerInvalidKey.executor": "Run",
+    "Gradle.CreateCustomerTest.executor": "Run",
+    "Gradle.CreateCustomerTest.navigateToHomePage.executor": "Run",
+    "Gradle.CustomerCreationRetryTest.executor": "Run",
+    "Gradle.CustomerCreationTest.createCustomer.executor": "Run",
+    "Gradle.CustomerCreationTest.createCustomerWithPhoneNumber.executor": "Run",
+    "Gradle.CustomerCreationTest.createDuplicateCustomer.executor": "Run",
+    "Gradle.CustomerCreationTest.shouldCreateCustomerSuccessfully (1).executor": "Run",
+    "Gradle.CustomerCreationTest.shouldCreateCustomerSuccessfully.executor": "Run",
+    "Gradle.CustomerCreationTest.updateCustomer.executor": "Run",
+    "Gradle.InnvoiceCreationTest.testCreateInvoice.executor": "Run",
+    "Gradle.InnvoiceCreationTest.testFinalizeInvoice.executor": "Run",
+    "Gradle.InnvoiceCreationTest.testGetInvoiceDetails.executor": "Run",
+    "Gradle.InvoiceFilterByStatusTest.filterInvoiceByStatusDraft.executor": "Run",
+    "Gradle.InvoiceFilterByStatusTest.filterInvoicesByDraftStatusTest.executor": "Run",
+    "Gradle.InvoiceFilterByStatusTest.filterInvoicesByOpenStatusTest.executor": "Run",
+    "Gradle.InvoiceTest.createInvoiceTest.executor": "Run",
+    "Gradle.OutboundPaymentsTest.createOutboundPayment_Success.executor": "Run",
+    "Gradle.PaymentIntentTest.createPaymentIntent_Success.executor": "Run",
+    "Gradle.StripeInvoiceTest.executor": "Run",
+    "Gradle.StripeInvoiceTest.testCreateAndVerifyInvoice.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ranju/IdeaProjects/Automation/banking-ui-automation-framework",
+    "onboarding.tips.debug.path": "C:/Users/ranju/IdeaProjects/API_10thDec25/src/main/java/org/example/Main.java",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ranju\IdeaProjects\Automation\stripe-api-automation-framework\api-automation" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ranju\IdeaProjects\Automation\stripe-api-automation-framework\ui-automation" />
+      <recent name="C:\Users\ranju\IdeaProjects\Automation\stripe-api-automation-framework\api-automation" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.CreateCustomerTest">
+    <configuration name="CreateCustomerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":ui-automation:test" />
+            <option value="--tests" />
+            <option value="&quot;com.stripe.ui.tests.customers.CreateCustomerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CreateCustomerTest.navigateToHomePage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":ui-automation:test" />
+            <option value="--tests" />
+            <option value="&quot;com.stripe.ui.tests.customers.CreateCustomerTest.navigateToHomePage&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="InnvoiceCreationTest.testCreateInvoice" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":api-automation:test" />
+            <option value="--tests" />
+            <option value="&quot;com.stripe.api.tests.payments.InnvoiceCreationTest.testCreateInvoice&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="InvoiceFilterByStatusTest.filterInvoicesByDraftStatusTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.stripe.api.tests.payments.InvoiceFilterByStatusTest.filterInvoicesByDraftStatusTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="InvoiceFilterByStatusTest.filterInvoicesByOpenStatusTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.stripe.api.tests.payments.InvoiceFilterByStatusTest.filterInvoicesByOpenStatusTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.CreateCustomerTest" />
+        <item itemvalue="Gradle.CreateCustomerTest.navigateToHomePage" />
+        <item itemvalue="Gradle.InnvoiceCreationTest.testCreateInvoice" />
+        <item itemvalue="Gradle.InvoiceFilterByStatusTest.filterInvoicesByOpenStatusTest" />
+        <item itemvalue="Gradle.InvoiceFilterByStatusTest.filterInvoicesByDraftStatusTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4cbfa63c-3901-43ac-a191-556d97e59b91" name="Changes" comment="" />
+      <created>1765341308657</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765341308657</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Added test scripts for invoice creation">
+      <option name="closed" value="true" />
+      <created>1773044067618</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773044067618</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added test scripts for invoice creation">
+      <option name="closed" value="true" />
+      <created>1773044119024</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773044119024</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;src/test/java/com/stripe/api/service/customers/CustomerService.java&#10;#&#9;src/test/java/com/stripe/api/service/payments/InvoiceService.java&#10;#&#9;src/test/resources/config.properties">
+      <option name="closed" value="true" />
+      <created>1773044346689</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1773044346689</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added test scripts for customer creation and updation" />
+    <MESSAGE value="Added test scripts for invoice creation" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;src/test/java/com/stripe/api/service/customers/CustomerService.java&#10;#&#9;src/test/java/com/stripe/api/service/payments/InvoiceService.java&#10;#&#9;src/test/resources/config.properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;src/test/java/com/stripe/api/service/customers/CustomerService.java&#10;#&#9;src/test/java/com/stripe/api/service/payments/InvoiceService.java&#10;#&#9;src/test/resources/config.properties" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api-automation/src/test/java/com/stripe/api/tests/payments/InnvoiceCreationTest.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
