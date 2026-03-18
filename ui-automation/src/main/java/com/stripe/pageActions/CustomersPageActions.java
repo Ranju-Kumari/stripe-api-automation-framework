@@ -5,6 +5,8 @@ import com.stripe.utilities.Waits;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.sql.Time;
+
 import static com.stripe.pageLocators.CustomersPage.*;
 
 public class CustomersPageActions {
@@ -41,4 +43,18 @@ public class CustomersPageActions {
             return false;
         }
     }
+
+    public CustomersPageActions addCustomer(){
+        WebElement addCustomerPlusBtn = waits.waitForElementToBeClickable(addCustomerButton,10);
+        addCustomerPlusBtn.click();
+        WebElement name = waits.waitForElementToBeClickable(customerNameInput,1000);
+        name.sendKeys("abc");
+        WebElement email = waits.waitForElementToBeClickable(customerEmailInput,1000);
+        email.sendKeys("abs@gmail.com");
+        WebElement addCustomer = waits.waitForElementToBeClickable(addCustomerSubmitButton,1000);
+        addCustomer.click();
+        return this;
+    }
+
+
 }

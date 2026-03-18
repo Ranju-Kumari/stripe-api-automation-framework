@@ -16,8 +16,8 @@ dependencies {
     // ✅ WebDriverManager (auto-manages browser drivers)
     implementation 'io.github.bonigarcia:webdrivermanager:6.3.3'
 
-    // ✅ Rest Assured (for cross-testing if needed)
-    testImplementation 'io.rest-assured:rest-assured:5.4.0'
+    // ✅ Rest Assured (used in LoginApiHelper for API-based login)
+    implementation 'io.rest-assured:rest-assured:5.4.0'
 
     testImplementation 'org.testng:testng:7.11.0'
 
