@@ -1,6 +1,6 @@
-# Stripe API Automation Framework
+# Stripe End to End Automation Framework
 
-A comprehensive REST API automation framework for testing Stripe's **Customers** and **Payments** APIs. Built with Java, Gradle, TestNG, and REST Assured for reliable, maintainable, and scalable API testing.
+A comprehensive UI and REST API automation framework for testing Stripe's **Customers** and **Payments** APIs. Built with REST Assured, Java, Gradle, TestNG, and Selenium WebDriver for reliable, maintainable, and scalable API and UI testing.
 
 ---
 
