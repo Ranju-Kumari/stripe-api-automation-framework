@@ -4,6 +4,7 @@ import com.stripe.utilities.ConfigManager;
 import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -25,7 +26,7 @@ public abstract class BaseTest {
     @BeforeMethod
     public void setUp() {
         // Get browser type from config (default: chrome)
-        String browser = ConfigManager.getKey("ui.browser");
+        String browser = ConfigManager.getInstance().getKey("ui.browser");
         if (browser == null) {
             browser = "chrome";
         }
@@ -35,32 +36,21 @@ public abstract class BaseTest {
             ChromeDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
         } else if (browser.equalsIgnoreCase("firefox")) {
-            // Firefox support - can be added later
-            throw new IllegalArgumentException("Firefox not yet configured");
-        } else {
-            // Default to Chrome
-            ChromeDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
-        }
+            driver = new FirefoxDriver();
 
-        // Navigate to base URL
-        String baseUrl = ConfigManager.getKey("ui.base.url");
-        if (baseUrl != null) {
-            driver.get(baseUrl);
+            // Navigate to base URL
+            String baseUrl = ConfigManager.getInstance().getKey("ui.base.url");
+            if (baseUrl != null) {
+                driver.get(baseUrl);
+            }
         }
-
-        System.out.println("✓ WebDriver initialized with browser: " + browser);
     }
 
     @AfterMethod
     public void tearDown() {
-        if (driver != null) {
-            try {
+            if (driver != null) {
                 driver.quit();
-                System.out.println("✓ WebDriver closed successfully");
-            } catch (Exception e) {
-                System.err.println("Error closing WebDriver: " + e.getMessage());
             }
         }
-    }
+
 }

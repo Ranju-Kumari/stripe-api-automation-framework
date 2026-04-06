@@ -1,6 +1,8 @@
 package com.stripe.api.tests.base;
 
 import com.stripe.utilities.ConfigManager;
+import com.stripe.utilities.DatabaseManager;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import static io.restassured.RestAssured.baseURI;
@@ -10,6 +12,7 @@ import static io.restassured.RestAssured.baseURI;
  *
  * Responsibilities:
  * - Global setup: Configure base URL and REST Assured settings (@BeforeClass)
+ * - Database connection lifecycle management
  * - Runs once per test class
  *
  * Note: Test-specific setup (e.g., creating test data) should be in @BeforeMethod
@@ -17,11 +20,22 @@ import static io.restassured.RestAssured.baseURI;
  */
 public class BaseTest {
 
+    protected DatabaseManager dbManager;
+
     @BeforeClass
     public void setUp() {
         baseURI = ConfigManager.getKey("baseUrl");
-//        RestAssured.authentication = RestAssured.basic(ConfigManager.getKey("stripe.secret.key"), "");
-        System.out.print("BASE URL :"+ baseURI);
+
+        // Database setup
+        dbManager = new DatabaseManager();
+        dbManager.connect();
+    }
+
+    @AfterClass
+    public void tearDown() {
+        if (dbManager != null) {
+            dbManager.close();
+        }
     }
 }
  

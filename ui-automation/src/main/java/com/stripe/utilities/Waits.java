@@ -25,7 +25,6 @@ public class Waits {
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
-
     /**
      * Wait for element to be visible
      */
@@ -34,16 +33,5 @@ public class Waits {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    /**
-     * Check if element is visible without throwing exception
-     */
-    public boolean isElementVisible(By locator, int timeoutInSeconds) {
-        try {
-            waitForElementToBeClickable(locator, timeoutInSeconds);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
-    }
 
 }
