@@ -4,18 +4,25 @@ package com.stripe.api.tests.customers.happyPathTests;
 import com.stripe.api.models.requests.customers.CustomerRequest;
 import com.stripe.api.models.requests.customers.UpdateCustomerRequest;
 import com.stripe.api.models.responses.customers.CustomerResponse;
+import com.stripe.api.service.customers.CustomerDBService;
 import com.stripe.api.service.customers.CustomerService;
 import com.stripe.api.tests.base.BaseTest;
 import io.restassured.response.Response;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.*;
 import static org.testng.Assert.*;
 
 public class CustomerCreationTest extends BaseTest {
 
     CustomerService customerService = new CustomerService();
+    CustomerDBService customerDBService;
+
+    @BeforeClass
+    public void initDBService() {
+        customerDBService = new CustomerDBService(dbManager);
+    }
 
     @Test(testName = "Able to create a customer successfully")
     public void createCustomer() {
@@ -44,6 +51,14 @@ public class CustomerCreationTest extends BaseTest {
         assertNotNull(customerResponse.getId());
         assertEquals(customerResponse.getName(), "Jenny Rosen");
         assertEquals(customerResponse.getEmail(), "jennyrosen@example.com");
+
+        // Database verification - Ensure customer is persisted in DB
+        assertTrue(customerDBService.customerExistsById(customerResponse.getId()),
+                "Customer should exist in database after creation");
+        assertEquals(customerDBService.getCustomerNameById(customerResponse.getId()),
+                request.getName(), "Customer name in DB should match the API request");
+        assertEquals(customerDBService.getCustomerEmailById(customerResponse.getId()),
+                request.getEmail(), "Customer email in DB should match the API request");
     }
 
 
@@ -80,6 +95,10 @@ public class CustomerCreationTest extends BaseTest {
                 .body("id", startsWith("cus_"))
                 .body("metadata.order_id", equalTo(updateRequest.getOrderId()))
                 .body("object", equalTo("customer"));
+
+        // Database verification - Ensure metadata is updated in DB
+        assertEquals(customerDBService.getCustomerMetadataOrderId(customerResponse.getId()),
+                updateRequest.getOrderId(), "Metadata order_id in DB should match the updated value");
 
         //NOTE:
         /*
@@ -134,6 +153,10 @@ public class CustomerCreationTest extends BaseTest {
                 .body("error.type", equalTo("invalid_request_error"))
                 .body("error.code", equalTo("resource_already_exists"))
                 .body("error.message", containsString("email"));
+
+        // Database verification - Ensure only the first customer exists in DB
+        assertTrue(customerDBService.customerExistsById(firstResponse.getId()),
+                "Original customer should still exist in database");
     }
 
 }

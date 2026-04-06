@@ -26,7 +26,7 @@ public abstract class BaseTest {
     @BeforeMethod
     public void setUp() {
         // Get browser type from config (default: chrome)
-        String browser = ConfigManager.getKey("ui.browser");
+        String browser = ConfigManager.getInstance().getKey("ui.browser");
         if (browser == null) {
             browser = "chrome";
         }
@@ -39,7 +39,7 @@ public abstract class BaseTest {
             driver = new FirefoxDriver();
 
             // Navigate to base URL
-            String baseUrl = ConfigManager.getKey("ui.base.url");
+            String baseUrl = ConfigManager.getInstance().getKey("ui.base.url");
             if (baseUrl != null) {
                 driver.get(baseUrl);
             }

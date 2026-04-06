@@ -5,14 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cbfa63c-3901-43ac-a191-556d97e59b91" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;src/test/java/com/stripe/api/service/customers/CustomerService.java&#10;#&#9;src/test/java/com/stripe/api/service/payments/InvoiceService.java&#10;#&#9;src/test/resources/config.properties">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui-automation/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-automation/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api-automation/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-automation/src/test/java/com/stripe/api/tests/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-automation/src/test/java/com/stripe/api/tests/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-automation/src/test/java/com/stripe/api/tests/customers/happyPathTests/CustomerCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-automation/src/test/java/com/stripe/api/tests/customers/happyPathTests/CustomerCreationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-automation/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-automation/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui-automation/src/main/java/com/stripe/pageActions/CustomersPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/src/main/java/com/stripe/pageActions/CustomersPageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui-automation/src/main/java/com/stripe/pageLocators/CustomersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/src/main/java/com/stripe/pageLocators/CustomersPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui-automation/src/main/java/com/stripe/utilities/Waits.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/src/main/java/com/stripe/utilities/Waits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/src/main/java/com/stripe/utilities/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/src/main/java/com/stripe/utilities/ConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-automation/src/main/java/com/stripe/utilities/LoginApiHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/src/main/java/com/stripe/utilities/LoginApiHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui-automation/src/test/java/com/stripe/ui/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/src/test/java/com/stripe/ui/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui-automation/src/test/java/com/stripe/ui/tests/customers/CreateCustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/src/test/java/com/stripe/ui/tests/customers/CreateCustomerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui-automation/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ui-automation/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +28,7 @@
   <component name="CopilotPersistence">
     <persistenceIdMap>
       <entry key="_C:/Users/ranju/IdeaProjects/Automation/stripe-api-automation-framework" value="36dfKZUVxUEekNoQoP0TSWAWOam" />
+      <entry key="_C:/Users/ranju/IdeaProjects/Automation/stripe-automation-framework" value="3B6fWiKcNwTjBYQnsSLp83kc5GF" />
     </persistenceIdMap>
   </component>
   <component name="CopilotUserSelectedModel">
@@ -88,46 +95,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.Build API_10thDec25.executor": "Run",
-    "Gradle.CreateCustomerNegativeTest.createCustomerInvalidKey.executor": "Run",
-    "Gradle.CreateCustomerTest.addCustomer.executor": "Run",
-    "Gradle.CreateCustomerTest.executor": "Run",
-    "Gradle.CreateCustomerTest.navigateToHomePage.executor": "Run",
-    "Gradle.CustomerCreationRetryTest.executor": "Run",
-    "Gradle.CustomerCreationTest.createCustomer.executor": "Run",
-    "Gradle.CustomerCreationTest.createCustomerWithPhoneNumber.executor": "Run",
-    "Gradle.CustomerCreationTest.createDuplicateCustomer.executor": "Run",
-    "Gradle.CustomerCreationTest.shouldCreateCustomerSuccessfully (1).executor": "Run",
-    "Gradle.CustomerCreationTest.shouldCreateCustomerSuccessfully.executor": "Run",
-    "Gradle.CustomerCreationTest.updateCustomer.executor": "Run",
-    "Gradle.InnvoiceCreationTest.testCreateInvoice.executor": "Run",
-    "Gradle.InnvoiceCreationTest.testFinalizeInvoice.executor": "Run",
-    "Gradle.InnvoiceCreationTest.testGetInvoiceDetails.executor": "Run",
-    "Gradle.InvoiceFilterByStatusTest.filterInvoiceByStatusDraft.executor": "Run",
-    "Gradle.InvoiceFilterByStatusTest.filterInvoicesByDraftStatusTest.executor": "Run",
-    "Gradle.InvoiceFilterByStatusTest.filterInvoicesByOpenStatusTest.executor": "Run",
-    "Gradle.InvoiceTest.createInvoiceTest.executor": "Run",
-    "Gradle.OutboundPaymentsTest.createOutboundPayment_Success.executor": "Run",
-    "Gradle.PaymentIntentTest.createPaymentIntent_Success.executor": "Run",
-    "Gradle.StripeInvoiceTest.executor": "Run",
-    "Gradle.StripeInvoiceTest.testCreateAndVerifyInvoice.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ranju/IdeaProjects/Automation/banking-ui-automation-framework",
-    "onboarding.tips.debug.path": "C:/Users/ranju/IdeaProjects/API_10thDec25/src/main/java/org/example/Main.java",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.Build API_10thDec25.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateCustomerNegativeTest.createCustomerInvalidKey.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateCustomerTest.addCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateCustomerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateCustomerTest.navigateToHomePage.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CustomerCreationRetryTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CustomerCreationTest.createCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CustomerCreationTest.createCustomerWithPhoneNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CustomerCreationTest.createDuplicateCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CustomerCreationTest.shouldCreateCustomerSuccessfully (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CustomerCreationTest.shouldCreateCustomerSuccessfully.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CustomerCreationTest.updateCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.InnvoiceCreationTest.testCreateInvoice.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.InnvoiceCreationTest.testFinalizeInvoice.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.InnvoiceCreationTest.testGetInvoiceDetails.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.InvoiceFilterByStatusTest.filterInvoiceByStatusDraft.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.InvoiceFilterByStatusTest.filterInvoicesByDraftStatusTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.InvoiceFilterByStatusTest.filterInvoicesByOpenStatusTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.InvoiceTest.createInvoiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OutboundPaymentsTest.createOutboundPayment_Success.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PaymentIntentTest.createPaymentIntent_Success.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.StripeInvoiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.StripeInvoiceTest.testCreateAndVerifyInvoice.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ui__features&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ranju/IdeaProjects/Automation/stripe-automation-framework&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ranju/IdeaProjects/API_10thDec25/src/main/java/org/example/Main.java&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ranju\IdeaProjects\Automation\stripe-api-automation-framework\api-automation" />
@@ -137,7 +145,7 @@
       <recent name="C:\Users\ranju\IdeaProjects\Automation\stripe-api-automation-framework\api-automation" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CreateCustomerTest.addCustomer">
+  <component name="RunManager" selected="Gradle.CustomerCreationTest.createCustomer">
     <configuration name="CreateCustomerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -158,8 +166,11 @@
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>true</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
     <configuration name="CreateCustomerTest.addCustomer" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -182,8 +193,11 @@
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>true</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
     <configuration name="CreateCustomerTest.navigateToHomePage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -206,8 +220,38 @@
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>true</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CustomerCreationTest.createCustomer" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":api-automation:test" />
+            <option value="--tests" />
+            <option value="&quot;com.stripe.api.tests.customers.happyPathTests.CustomerCreationTest.createCustomer&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
     <configuration name="InnvoiceCreationTest.testCreateInvoice" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -230,43 +274,29 @@
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="InvoiceFilterByStatusTest.filterInvoicesByOpenStatusTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.stripe.api.tests.payments.InvoiceFilterByStatusTest.filterInvoicesByOpenStatusTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CustomerCreationTest.createCustomer" />
+        <item itemvalue="Gradle.InnvoiceCreationTest.testCreateInvoice" />
         <item itemvalue="Gradle.CreateCustomerTest.addCustomer" />
         <item itemvalue="Gradle.CreateCustomerTest.navigateToHomePage" />
         <item itemvalue="Gradle.CreateCustomerTest" />
-        <item itemvalue="Gradle.InnvoiceCreationTest.testCreateInvoice" />
-        <item itemvalue="Gradle.InvoiceFilterByStatusTest.filterInvoicesByOpenStatusTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -331,6 +361,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

@@ -4,9 +4,6 @@ import com.stripe.utilities.ConfigManager;
 import com.stripe.utilities.Waits;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import java.sql.Time;
-
 import static com.stripe.pageLocators.CustomersPage.*;
 
 public class CustomersPageActions {
@@ -22,9 +19,9 @@ public class CustomersPageActions {
     public CustomersPageActions navigateToHomePage(){
 
         WebElement userName = waits.waitForElementToBeClickable(usernameField, 1000);
-        userName.sendKeys(ConfigManager.getKey("ui.username"));
+        userName.sendKeys(ConfigManager.getInstance().getKey("ui.username"));
         WebElement password = waits.waitForElementToBeClickable(passwordField, 1000);
-        password.sendKeys(ConfigManager.getKey("ui.password"));
+        password.sendKeys(ConfigManager.getInstance().getKey("ui.password"));
         WebElement sign = waits.waitForElementToBeClickable(signInButton, 1000);
         sign.click();
 

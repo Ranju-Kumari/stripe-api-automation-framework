@@ -32,8 +32,8 @@ public class LoginApiHelper {
      * @param driver WebDriver instance (must already be navigated to a stripe.com page)
      */
     public static void loginViaApiAndSetCookies(WebDriver driver) {
-        String email = ConfigManager.getKey("ui.username");
-        String password = ConfigManager.getKey("ui.password");
+        String email = ConfigManager.getInstance().getKey("ui.username");
+        String password = ConfigManager.getInstance().getKey("ui.password");
 
         // Step 1: Submit email to get initial session cookies
         Response emailResponse = given()
